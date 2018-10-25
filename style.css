@@ -1,0 +1,34 @@
+body{
+    background-image:url('bg.png');
+    margin:0;
+    font-family:'robotoregular';
+}
+#loadscreen{
+    z-index:2;
+    height:100vw;
+    width:100vw;
+    background:#fff;
+    font-family:'robotoregular';
+}
+.name{
+    color:#232323;
+    font-size:25px;
+    margin:25px;
+}
+.icon{
+    background:url('icon.png');
+    height:150px;
+    width:150px;
+    background-size:cover;
+   
+}
+.spc{
+    width:100%;
+    height:20%;
+}
+#frame{
+    margin:20px;
+    width:960px;
+    height:569px;
+    border:none;
+}

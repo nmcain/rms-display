@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+     <script src="renderer.js"></script>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>nmcain.chromium.rms_display</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="mdl/material.min.css">
+<script src="mdl/material.min.js"></script>
+
+      
+<link rel="stylesheet" href="fonts/md-icons/material-icons.css">
+      <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
+  </head>
+  <body onload="startTime()">
+    <div align="center" id="loadscreen">
+        <div class="spc"></div>
+      <div class="icon"></div>
+      <p class="name">
+          RMS Display 1.0
+        </p>
+        
+        <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+      </div>
+      <div class="rmslogo"></div>
+      
+      
+      
+      <style>
+          #txt{
+              
+          }
+          #demo{
+              
+          }
+      </style>
+      
+      <div id="txt"></div>
+      <p id="demo"></p>
+
+      
+      
+      
+      
+      
+<script>
+
+var d = new Date();
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+var days = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
+document.getElementById("demo").innerHTML =  days[d.getDay()] + months[d.getMonth()] + " " + d.getDate();
+</script>
+      
+      <iframe id="frame" src="https://docs.google.com/presentation/d/e/2PACX-1vSfFb260GcpIN3XwphxbXRawdcNZYJ_hNLLLBbjFWSRcq9os2KBzUjtWPSK9a8jHZ5y1omEzliAtKyH/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">No connection</iframe>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </body>
+</html>
