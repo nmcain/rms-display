@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="mdl/material.min.css">
 <script src="mdl/material.min.js"></script>
-
+<script src="https://craig.global.ssl.fastly.net/js/mousetrap/mousetrap.min.js"></script>
       
 <link rel="stylesheet" href="fonts/md-icons/material-icons.css">
       <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
@@ -27,11 +27,50 @@
       
       
       <style>
+          .rmslogo{
+              background:url('img/rms.png');
+              height:200px;
+              width:200px;
+              background-size:cover;
+          }
           #txt{
-              
+             font-family:"robotolight", sans-serif;
+              font-size:100px;
+              color:#fff;
+              position:absolute;
+              top:120px;
+              right:200px;
           }
           #demo{
+             font-family:"robotoregular", sans-serif; 
+              font-size:35px;
+              color:#fff;
+              position:absolute;
+              top:190px;
+              right:200px;
               
+          }
+          #twitter{
+              overflow:scroll;
+              background:#fff;
+              height:750px;
+width:600px;
+              position:absolute;
+              right:25px;
+              top:300px;
+              z-index:1;
+          }
+          #frame{
+              width:1250px;
+              height:830px;
+          }
+          #weather{
+              width:445px;
+              height:261px;
+          }
+          #calendar{
+            width:445px;
+              height:261px;  
           }
       </style>
       
@@ -39,7 +78,10 @@
       <p id="demo"></p>
 
       
+      <div style="display:none;" id="twitter">
+      <a class="twitter-timeline" data-width="600" data-height="750" data-theme="light" data-link-color="#E81C4F" href="https://twitter.com/RancheroMiddle?ref_src=twsrc%5Etfw">Tweets by RancheroMiddle</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       
+      </div>
       
       
       
@@ -50,13 +92,28 @@ var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "O
 
 var days = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
 document.getElementById("demo").innerHTML =  days[d.getDay()] + months[d.getMonth()] + " " + d.getDate();
+    
+   
+    
+    Mousetrap.bind('r', function(e) {
+  location.reload();
+});
+    
+    
+    
+    
+    
 </script>
       
-      <iframe id="frame" src="https://docs.google.com/presentation/d/e/2PACX-1vSfFb260GcpIN3XwphxbXRawdcNZYJ_hNLLLBbjFWSRcq9os2KBzUjtWPSK9a8jHZ5y1omEzliAtKyH/embed?start=true&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">No connection</iframe>
+      
+      <div class="rms-logo"></div>
       
       
+      <iframe id="weather" src="https://broadcommasters.github.io/weather-pwa/index.html" frameborder="0" width="445" height="261"></iframe>
       
+      <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=nmcain%40gmail.com&amp;color=%231B887A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="261" frameborder="0" scrolling="no"></iframe>
       
+     <iframe id="frame" src="https://docs.google.com/presentation/d/e/2PACX-1vSfFb260GcpIN3XwphxbXRawdcNZYJ_hNLLLBbjFWSRcq9os2KBzUjtWPSK9a8jHZ5y1omEzliAtKyH/embed?start=true&loop=true&delayms=10000&rm=minimal" frameborder="0" width="1250" height="732" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       
       
       

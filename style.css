@@ -2,6 +2,7 @@ body{
     background-image:url('bg.png');
     margin:0;
     font-family:'robotoregular';
+    overflow:visible;
 }
 #loadscreen{
     z-index:2;
